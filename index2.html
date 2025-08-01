@@ -1,0 +1,126 @@
+<html lang="en">
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "779f1371-535c-4ea7-a239-276f8ccaeef7", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "1574a450-ee32-47ce-ae45-8f41691e2a65", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+<head>
+  <meta charset="UTF-8">
+  <title>Book World</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 10px 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-style: italic;
+      color: #e0e0e0;
+    }
+
+    .recommendations {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+    }
+
+    .recommendations h2 {
+      text-align: center;
+      color: #ffd166;
+    }
+
+    .recommendations ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .recommendations li {
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    .search-chat {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .search-chat input {
+      padding: 10px;
+      width: 60%;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      background-color: rgba(255,255,255,0.8);
+      color: #333;
+    }
+
+    .chat-button {
+      margin-top: 15px;
+      display: inline-block;
+      background-color: #ffd166;
+      color: #333;
+      padding: 10px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      padding: 15px;
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Book World</h1>
+    <p>A cozy corner for book lovers.</p>
+  </header>
+
+  <div class="recommendations">
+    <h2>Top 3 Book Recommendations</h2>
+    <ul>
+      <li>📘 Atomic Habits – “Small habits, big results.”</li>
+      <li>📖 The Alchemist – “A magical journey of self-discovery.”</li>
+      <li>📚 It Ends With Us – “Raw, real, and unforgettable.”</li>
+    </ul>
+  </div>
+
+  <div class="search-chat">
+    <input type="text" placeholder="Search books...">
+    <br>
+    <h1>💬 Chat with Bookie for book recommendations</h1>
+  </div>
+
+  <footer>
+    Made by Nitika Srivastava
+  </footer>
+</body>
+</html>
